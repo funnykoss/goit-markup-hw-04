@@ -60,7 +60,8 @@ img {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
-.buttons.secondary {
+
+.buttons-filters {
   margin: 0px;
   padding: 6px 20px;
   min-width: 73px;
@@ -80,10 +81,22 @@ img {
 
   font-family: inherit;
 }
-.buttons.secondary:hover,
-.buttons.secondary:focus {
+
+.buttons-filters:hover,
+.buttons-filters:focus {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
+}
+
+.filters-items .filter-all {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.filters-items .filter-all:first-child:hover,
+.filters-items .filter-all:first-child:focus {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
 }
 
 .section-title {
