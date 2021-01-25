@@ -26,6 +26,14 @@ body {
   margin: 0px;
   list-style: none;
 }
+
+.link {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -199,6 +207,15 @@ img {
   margin-left: auto;
 }
 
+.contacts-icon {
+  display: inline-block;
+}
+
+.contacts-icon {
+  width: 12px;
+  height: 6px;
+}
+
 .contacts-nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -274,6 +291,31 @@ img {
 .features {
   display: flex;
 }
+
+.features-thumbs {
+  display: flex;
+  text-align: center;
+}
+
+.features-icons {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  width: 270px;
+  height: 120px;
+  background-color: var(--main-bg-color);
+}
+
+.features-icons:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-link-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .features-items {
   width: 270px;
   height: 101px;
