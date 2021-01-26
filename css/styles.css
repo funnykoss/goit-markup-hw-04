@@ -373,7 +373,6 @@ img {
 
 .team {
   display: flex;
-  /* margin: -15px; */
 }
 
 .team-item {
@@ -420,21 +419,60 @@ img {
   display: block;
 }
 
-.team-social {
+.social-tumbs {
   display: flex;
   justify-content: space-around;
 }
 
-/* .team-social-cards {
+.social-items {
+  display: flex;
+  justify-content: center;
   align-items: center;
-} */
 
-.social-icon {
   width: 44px;
   height: 44px;
 }
 
+.social-icons {
+  width: 20px;
+  height: 20px;
+}
+
 /* ==== END ABOUT ==== */
+
+/* ==== OUR CLIENTS ==== */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-items {
+  display: flex;
+}
+
+.clients-tumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-tumbs:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-items-link {
+  height: 50px;
+  width: 100px;
+}
+
+/* ==== END OUR CLIENTS ==== */
 
 /* ==== FOOTER ==== */
 
