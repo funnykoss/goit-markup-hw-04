@@ -9,6 +9,7 @@
   --main-lite-color: rgba(255, 255, 255, 0.6);
   --footer-bg-color: #2f303a;
   --main-bg-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 body {
   font-family: var(--main-font);
@@ -28,9 +29,6 @@ body {
 }
 
 .link {
-  display: block;
-  padding: 0px;
-  margin: 0px;
   text-decoration: none;
 }
 
@@ -204,16 +202,38 @@ img {
 
 .contacts-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
-.contacts-icon {
-  display: inline-block;
+.contacts-tumb {
+  display: flex;
+  align-items: center;
 }
 
-.contacts-icon {
-  width: 12px;
-  height: 6px;
+.contacts-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--icon-color);
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.contacts-icons-link:hover,
+.contacts-icons-link:focus {
+  fill: var(--accent-color);
 }
 
 .contacts-nav-item:not(:last-child) {
@@ -237,6 +257,10 @@ img {
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icons-link:hover {
+  fill: var(--accent-color);
 }
 
 /* ==== END HEADER ==== */
@@ -424,21 +448,34 @@ img {
   justify-content: space-around;
 }
 
-.social-items {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--icon-color);
 
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .social-icons {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
-/* ==== END ABOUT ==== */
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--background-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* ==== END TEAM ==== */
 
 /* ==== OUR CLIENTS ==== */
 
@@ -451,7 +488,11 @@ img {
   display: flex;
 }
 
-.clients-tumbs {
+/* .clients-tumbs {
+  display: flex;
+}
+
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,7 +500,7 @@ img {
   width: 170px;
   height: 90px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
@@ -467,10 +508,10 @@ img {
   margin-right: 30px;
 }
 
-.client-items-link {
+.client-items {
   height: 50px;
   width: 100px;
-}
+}  */
 
 /* ==== END OUR CLIENTS ==== */
 
