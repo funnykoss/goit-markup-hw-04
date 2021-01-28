@@ -92,6 +92,8 @@ img {
 .buttons-filters:focus {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters-items .filter-all {
@@ -467,7 +469,7 @@ img {
 
 .social-icons:hover,
 .social-icons:focus {
-  fill: var(--background-color);
+  color: var(--background-color);
 }
 
 .social-link:hover,
@@ -484,15 +486,11 @@ img {
   padding-bottom: 94px;
 }
 
-.clients-items {
+.clients-list {
   display: flex;
 }
 
-/* .clients-tumbs {
-  display: flex;
-}
-
-.client-link {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,22 +500,34 @@ img {
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  color: var(--icon-color);
+}
+
+.client-items {
+  width: 90px;
+  height: 55px;
+  fill: currentColor;
 }
 
 .clients-tumbs:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-items {
-  height: 50px;
-  width: 100px;
-}  */
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+}
 
 /* ==== END OUR CLIENTS ==== */
 
 /* ==== FOOTER ==== */
 
 /* footer*/
+
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
 
 .contacts-footer {
   padding-top: 60px;
@@ -563,6 +573,65 @@ img {
 .logo-footer {
   text-decoration: none;
 }
+
+.social-title {
+  margin-bottom: 20px;
+
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.adress-footer:not(:last-child) {
+  margin-right: 70px;
+}
+
+.social-footer-tumbs {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.social-footer {
+  min-width: 206px;
+  height: 80px;
+}
+
+.social-footer-tumbs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--background-color);
+}
+
+.social-footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-footer-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
 /* ==== END FOOTER ==== */
 
 /* ==== PORTFOLIO ==== */
