@@ -490,8 +490,6 @@ img {
 }
 
 .client-items {
-  width: 90px;
-  height: 55px;
   fill: currentColor;
 }
 
@@ -584,7 +582,6 @@ img {
 
 .social-footer-tumbs {
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
 }
 .social-footer {
@@ -616,8 +613,6 @@ img {
 }
 
 .social-footer-icons {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
