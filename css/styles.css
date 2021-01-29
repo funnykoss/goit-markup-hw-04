@@ -254,19 +254,19 @@ img {
 }
 
 .contacts-tumb:hover .icon-mail,
-.contacts-tumb:focus .icon-mail {
-  fill: var(--accent-color);
-}
-
+.contacts-tumb:focus .icon-mail,
 .contacts-tumb:hover .icon-phone,
 .contacts-tumb:hover .icon-phone {
   fill: var(--accent-color);
 }
 
+.contacts-tumb:hover .contacts-nav-link,
+.contacts-tumb:focus .contacts-nav-link {
+  color: var(--accent-color);
+}
+
 .site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-nav-link:hover,
-.contacts-nav-link:focus {
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
