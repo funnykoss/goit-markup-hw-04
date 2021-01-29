@@ -256,18 +256,13 @@ img {
 .contacts-tumb:hover .icon-mail,
 .contacts-tumb:focus .icon-mail,
 .contacts-tumb:hover .icon-phone,
-.contacts-tumb:hover .icon-phone {
-  fill: var(--accent-color);
-}
-
+.contacts-tumb:hover .icon-phone,
 .contacts-tumb:hover .contacts-nav-link,
-.contacts-tumb:focus .contacts-nav-link {
-  color: var(--accent-color);
-}
-
+.contacts-tumb:focus .contacts-nav-link,
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* ==== END HEADER ==== */
@@ -322,31 +317,23 @@ img {
 }
 
 .features-thumbs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 
   width: 270px;
   height: 120px;
   background-color: var(--main-bg-color);
-}
-
-.features-icons {
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  width: 270px;
-  height: 120px;
-  background-color: var(--main-bg-color);
-}
-
-.features-icons:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.features-icon {
   width: 70px;
   height: 70px;
 }
@@ -475,13 +462,11 @@ img {
 }
 
 .social-link:hover .social-icons,
-.social-link:focus .social-icons {
-  fill: var(--background-color);
-}
-
+.social-link:focus .social-icons,
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  fill: var(--background-color);
 }
 
 /* ==== END TEAM ==== */
@@ -525,13 +510,11 @@ img {
 }
 
 .clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-}
-
+.clients-link:focus,
 .clients-link:hover .client-items,
 .clients-link:focus .client-items {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /* ==== END OUR CLIENTS ==== */
 
