@@ -209,41 +209,26 @@ img {
 }
 
 .contacts-nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* text-decoration: none; */
 
   color: var(--title-text-color);
 }
 
-.contacts-tumb {
-  display: flex;
-  align-items: center;
-}
-
-.contacts-icons-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  color: var(--icon-color);
-}
-
 .icon-mail {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
   fill: currentColor;
 }
 
 .icon-phone {
+  margin-right: 10px;
   width: 10px;
   height: 16px;
   fill: currentColor;
@@ -253,12 +238,8 @@ img {
   margin-right: 50px;
 }
 
-.contacts-tumb:hover .icon-mail,
-.contacts-tumb:focus .icon-mail,
-.contacts-tumb:hover .icon-phone,
-.contacts-tumb:hover .icon-phone,
-.contacts-tumb:hover .contacts-nav-link,
-.contacts-tumb:focus .contacts-nav-link,
+.contacts-nav-link:hover,
+.contacts-nav-link:focus,
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -324,13 +305,10 @@ img {
   background-color: var(--main-bg-color);
 }
 
-.features-link-icon {
+.features-thumbs {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 100%;
-  height: 100%;
 }
 
 .features-items {
@@ -386,7 +364,6 @@ img {
 }
 
 .team-item {
-  /* margin: 15px; */
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color);
   width: 270px;
@@ -403,7 +380,7 @@ img {
   padding-top: 30px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -655,6 +632,7 @@ img {
 
 .projects-items {
   width: calc((100% - 60px) / 3);
+  outline: 1px solid var(--main-bg-color);
 }
 
 .projects-items:hover {
@@ -671,9 +649,6 @@ img {
 
 .card-title {
   padding: 20px 24px;
-  border-left: 1px solid var(--main-bg-color);
-  border-bottom: 1px solid var(--main-bg-color);
-  border-right: 1px solid var(--main-bg-color);
 
   background-color: var(--background-color);
 }
