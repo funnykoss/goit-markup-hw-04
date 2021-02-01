@@ -209,6 +209,8 @@ img {
 }
 
 .contacts-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
